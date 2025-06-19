@@ -74,7 +74,7 @@ Route::prefix('676fbdd1')->name('admin.')->middleware('auth')->group(function ()
         Route::get('/edit-password', 'updatePasswordIndex')->name('edit-password');
         Route::get('/info', 'profile')->name('info');
         Route::get('/', 'index')->name('dashboard');
-        Route::get('/dashboard', 'index')->name('dashboard');
+        // Route::get('/dashboard', 'index')->name('dashboard');
         Route::post('/profile/update-password/{user}', 'updatePassword')->name('update-password');
     });
 
